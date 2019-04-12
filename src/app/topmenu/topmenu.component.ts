@@ -9,6 +9,8 @@ export class TopmenuComponent implements OnInit {
 
   constructor() { }
 
+  matMenuTriggerFor = 'menu';
+
   ngOnInit() {
   }
 

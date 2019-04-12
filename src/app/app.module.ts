@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { LeftmenuComponent } from './leftmenu/leftmenu.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LeftmenuComponent } from './leftmenu/leftmenu.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

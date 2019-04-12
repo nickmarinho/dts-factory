@@ -9,6 +9,8 @@ export class LeftmenuComponent implements OnInit {
 
   constructor() { }
 
+  matMenuTriggerFor = 'menu';
+
   ngOnInit() {
   }
 
