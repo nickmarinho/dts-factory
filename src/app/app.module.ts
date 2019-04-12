@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
+import { MatButtonModule, MatIconModule, MatMenuModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { TopmenuComponent } from './topmenu/topmenu.component';
 import { LeftmenuComponent } from './leftmenu/leftmenu.component';
-import { MatMenuModule } from '@angular/material/menu';
+import { TopmenuComponent } from './topmenu/topmenu.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,9 @@ import { MatMenuModule } from '@angular/material/menu';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
