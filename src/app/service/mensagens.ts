@@ -1,5 +1,5 @@
 export interface Mensagens {
-  Mensagem: Mensagens;
+  Mensagem: Array<Mensagem>;
 }
 
 export interface Mensagem {

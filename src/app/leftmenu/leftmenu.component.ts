@@ -14,11 +14,10 @@ export class LeftmenuComponent implements OnInit {
   constructor(
     private mensagensService: MensagensService
   ) {
-    this.menu = this.mensagensService.getMensagens();
   }
 
-
   ngOnInit() {
+    this.menu = this.mensagensService.getMensagens();
   }
 
 }
