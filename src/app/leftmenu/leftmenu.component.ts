@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Mensagens } from '../service/mensagens';
+import { MensagensService } from '../service/mensagens.service';
 
 @Component({
   selector: 'app-leftmenu',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leftmenu.component.sass']
 })
 export class LeftmenuComponent implements OnInit {
-
-  constructor() { }
-
   matMenuTriggerFor = 'menu';
+  menu: Mensagens;
+
+  constructor(
+    private mensagensService: MensagensService
+  ) {
+    this.menu = this.mensagensService.getMensagens();
+  }
+
 
   ngOnInit() {
   }
