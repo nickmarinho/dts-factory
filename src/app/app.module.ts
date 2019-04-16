@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { LeftmenuComponent } from './leftmenu/leftmenu.component';
 import { MensagensService } from './service/mensagens.service';
 import { TopmenuComponent } from './topmenu/topmenu.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopmenuComponent,
-    LeftmenuComponent
+    LeftmenuComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
