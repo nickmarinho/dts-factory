@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Mensagens } from '../service/mensagens';
 import { MensagensService } from '../service/mensagens.service';
 
@@ -9,7 +10,7 @@ import { MensagensService } from '../service/mensagens.service';
 })
 export class LeftmenuComponent implements OnInit {
   matMenuTriggerFor = 'menu';
-  menu: Mensagens;
+  menu: Observable<Mensagens>;
 
   constructor(
     private mensagensService: MensagensService
