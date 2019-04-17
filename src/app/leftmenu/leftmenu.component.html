@@ -1,3 +1,3 @@
 <ng-container *ngIf="(menu | async) as menus">
-  <button mat-button *ngFor="let m of menus">{{ m.Titulo }}<br />{{ m.DataHora | date:'shortTime' }}</button>
+  <button mat-button *ngFor="let m of menus" (click)="exibirMensagem(m)">{{ m.Titulo }}<br />{{ m.DataHora | date:'shortTime' }}</button>
 </ng-container>

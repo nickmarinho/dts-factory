@@ -1,3 +1,9 @@
-<p>
-  content works!
-</p>
+<ng-container *ngIf="mensagem">
+  <div class="boxmensagem">
+    <div class="titulo">{{mensagem.Titulo}}</div>
+    <div class="datahora">{{mensagem.DataHora}}</div>
+    <div class="assunto">{{mensagem.Assunto}}</div>
+    <div class="mensagem">{{mensagem.Mensagem}}</div>
+  </div>
+  <button mat-button (click)="excluirMensagem(mensagem)">Excluir Mensagem</button>
+</ng-container>

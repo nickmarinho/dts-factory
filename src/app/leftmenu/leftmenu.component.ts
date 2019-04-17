@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Mensagens } from '../service/mensagens';
 import { MensagensService } from '../service/mensagens.service';
@@ -17,7 +17,18 @@ export class LeftmenuComponent implements OnInit {
   ) {
   }
 
+  @Output()
+    exibirMensagemEmitter: EventEmitter<string> = new EventEmitter();
+
   ngOnInit() {
+    this.configurarMenu();
+  }
+
+  public exibirMensagem(mensagem) {
+    this.exibirMensagemEmitter.emit(mensagem);
+  }
+
+  public configurarMenu() {
     this.menu = this.mensagensService.getMensagens();
   }
 

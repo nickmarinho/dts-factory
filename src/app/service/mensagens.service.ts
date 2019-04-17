@@ -15,7 +15,11 @@ export class MensagensService {
     return this.httpService.get<Mensagens>('./assets/menu.json');
   }
 
+  public excluirMensagem(mensagem: Mensagem) {
+    // return this.httpService.post('./assets/menu.json', JSON.stringify(mensagem), {headers: this.headers});
+  }
+
   public addMensagem(mensagem: Mensagem) {
-    return this.httpService.post('./assets/menu.json', JSON.stringify(mensagem), {headers: this.headers});
+    // return this.httpService.post('./assets/menu.json', JSON.stringify(mensagem), {headers: this.headers});
   }
 }
