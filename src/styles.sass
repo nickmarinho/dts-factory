@@ -1,2 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+$gray-color: #444444;
+$primary-cold-color: #ffffff;
+$primary-dark-color: #000000;
+$second-cold-color: #cccccc;
+
+body 
+  background: $primary-dark-color;
+  color: $primary-cold-color;
+
+.mat-menu-item
+  border: 1px solid $gray-color;
+
+.mat-button:hover
+  background: $gray-color;
+  color: $second-cold-color;
+
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
