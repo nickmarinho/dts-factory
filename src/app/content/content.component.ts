@@ -12,10 +12,10 @@ export class ContentComponent implements OnInit {
   constructor(private mensagensService: MensagensService) { }
 
   @Input()
-  mensagem: Mensagem;
+    mensagem: Mensagem;
 
   @Output()
-  atualizarMenuEmitter: EventEmitter<string> = new EventEmitter();
+    atualizarMenuEmitter: EventEmitter<string> = new EventEmitter();
 
   ngOnInit() {
   }

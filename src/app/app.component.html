@@ -1,3 +1,3 @@
 <app-topmenu></app-topmenu>
-<app-leftmenu (exibirMensagemEmitter)="exibirMensagem($event)"></app-leftmenu>
-<app-content [mensagem]="mensagem" (atualizarMenuEmitter)="atualizarMenu($event)"></app-content>
+<app-leftmenu [refreshMenu]="refreshMenu" (exibirMensagemEmitter)="exibirMensagem($event)"></app-leftmenu>
+<app-content [mensagem]="mensagem" (resetRefreshMenuEmitter)="resetRefreshMenu($event)" (atualizarMenuEmitter)="atualizarMenu($event)"></app-content>

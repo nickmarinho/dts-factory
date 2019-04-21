@@ -16,9 +16,11 @@ export class AppComponent {
   }
 
   public atualizarMenu() {
-    console.log('atualizarMenu');
-
     this.refreshMenu = true;
+  }
+
+  public resetRefreshMenu() {
+    this.refreshMenu = false;
   }
 
 }
